@@ -1,0 +1,35 @@
+
+.logo {
+    display: flex;
+    margin: auto;
+
+}
+.navigation {
+    justify-content: center;
+    margin: auto;
+}
+
+.mainNav {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+    font-weight: 500;
+    opacity: 0.6;
+}
+
+.mainNav, .navIcons :hover {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    margin: auto;
+  
+}
+
+.navIcons {
+    display: flex;
+    margin: auto;
+    gap: 15px;
+
+}
