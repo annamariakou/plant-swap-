@@ -9,6 +9,10 @@
     margin: auto;
 }
 
+.mobile-menu-toggle {
+    display: none;
+  }
+
 .mainNav {
     list-style-type: none;
     display: flex;
@@ -31,5 +35,24 @@ header {
     display: flex;
     margin: auto;
     gap: 15px;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+    .menu-open {
+        display: none;
+      }
+    
+      .mobile-menu-toggle {
+        display: block;
+        position: absolute;
+        left: 0; /* to make the hamburger menu appear on the left */
+        /* other styles... */
+      }
 
 }
