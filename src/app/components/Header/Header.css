@@ -9,11 +9,18 @@
     margin: auto;
 }
 
-.mainNav {
+
+.mainNav ul, .mainNavInactive ul {
     list-style-type: none;
     display: flex;
     gap: 100px;
+}
+
+.mainNav li, .mainNavInactive li {
     font-weight: 500;
+}
+
+.mainNavInactive {
     opacity: 0.6;
 }
 
@@ -43,32 +50,31 @@ header {
   }
 
 
-@media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
 
-        .menu {
-          display: block;
-        }
-      
-        .mainNav {
-          display: none; 
-        }
-      
-        .mainNav.active {
-          display: flex; 
-        }
-      
-        .hamburgerImg {
-          display: block;
-        }
+    .menu {
+      display: block;
+    }
+  
+    .mainNav {
+      display: none; 
+    }
+  
+    .mainNav.active {
+      display: flex; 
+      flex-direction: column;
+    }  
+  
+    .hamburgerImg {
+      display: block;
+    }
 
-        .hamburgerImgClosed {
-            display: none; 
-          }
-        
-          .hamburgerImgClosed.active {
-            display: block; 
-          }
+    .hamburgerImgClosed {
+        display: none; 
+      }
     
+      .hamburgerImgClosed.active {
+        display: block; 
+      }
 }
-
-   
+  

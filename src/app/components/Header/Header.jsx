@@ -40,7 +40,7 @@ export default function Header() {
           )}
         </button> 
 
-        <div className={`mainNav ${isActive ? 'active' : ''}`}>
+        <div className={`mainNav ${isActive ? 'active' : 'mainNavInactive'}`}>
           <ul>
             <li>HOME</li>
             <li>SWAP</li>
