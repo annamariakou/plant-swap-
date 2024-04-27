@@ -9,14 +9,6 @@
     margin: auto;
 }
 
-.hamburgerImgClosed {
-    display: none;
-}
-
-.mobile-menu-toggle {
-    display: none;
-  }
-
 .mainNav {
     list-style-type: none;
     display: flex;
@@ -42,17 +34,39 @@ header {
 
 }
 
+.hamburgerImgClosed, .hamburgerImg {
+    display: none;
+}
 
-
+.menu {
+    display: none;
+  }
 
 
 @media only screen and (max-width: 480px) {
 
-        .mobile-menu-toggle {
-            display: block;
-            position: absolute;
-            left: 0; /* to make the hamburger menu appear on the left */
-            /* other styles... */
+        .menu {
+          display: block;
+        }
+      
+        .mainNav {
+          display: none; 
+        }
+      
+        .mainNav.active {
+          display: flex; 
+        }
+      
+        .hamburgerImg {
+          display: block;
+        }
+
+        .hamburgerImgClosed {
+            display: none; 
+          }
+        
+          .hamburgerImgClosed.active {
+            display: block; 
           }
     
 }
