@@ -20,6 +20,11 @@
     font-weight: 500;
 }
 
+.mainNav.active ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
 .mainNavInactive {
     opacity: 0.6;
 }
@@ -52,6 +57,10 @@ header {
 
   @media only screen and (max-width: 480px) {
 
+    header {
+        justify-content: space-between;
+    }
+
     .menu {
       display: block;
     }
@@ -63,10 +72,12 @@ header {
     .mainNav.active {
       display: flex; 
       flex-direction: column;
+      background-color: #F4C6D4;
     }  
   
     .hamburgerImg {
       display: block;
+      align-self: flex-start;
     }
 
     .hamburgerImgClosed {
@@ -76,5 +87,20 @@ header {
       .hamburgerImgClosed.active {
         display: block; 
       }
+
+      .logo {
+        order: 2;
+        display: flex;
+        margin: auto;
+        align-self: center;
+    }
+
+    .hamburgerImg, .hamburgerImgClosed {
+        order: 1;
+        background-color: transparent;
+    }
+
+    .navIcons{
+        order: 3;
+    }
 }
-  
